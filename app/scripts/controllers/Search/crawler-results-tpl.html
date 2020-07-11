@@ -1,0 +1,37 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Results: {{crawlerSearchCtrl.model.results.total}} books found</div>
+  <div class="panel-body">
+    <div class="row mt-md pb-md row-separator-border" ng-repeat="book in crawlerSearchCtrl.model.results">
+      <div class="col-sm-4 col-md-3 col-xs-3 text-center">
+        <img class="img-thumbnail" ng-src="{{book.img}}">
+      </div>
+      <div class="col-sm-5 col-md-6 col-xs-6">
+        <h4>
+          <a class="link" target="_blank" ng-href="{{book.url}}"><span>{{book.title}}</span></a>
+        </h4>
+        <h5><strong>{{book.author}}</strong></h5>
+        <div class="mt-lg mb-lg">
+          <h4>
+            <span class="alert alert-danger" tooltip-placement="right" tooltip-enable="book.foreignPrice" uib-tooltip="Converted from original price: {{book.originalPrice}}"><strong>{{book.price}} <span class="text-danger" ng-if="book.foreignPrice">*</span></strong></span>
+          </h4>
+        </div>
+        <div>
+          <p class="small">
+            <span ng-bind-html="book.editorial"></span>
+          </p>
+          <p class="small">
+            <span>{{book.isbn}}</span>
+          </p>
+        </div>
+        <p class="small">{{book.estado}}</p>
+        <p>{{book.quantity}}</p>
+        <div>
+          <p><strong>Remitente: {{book.libraria}}</strong></p>
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-3 col-xs-3 text-center">
+        <img class="mt-sm img-thumbnail" ng-if="book.storeLogo" ng-src="{{book.storeLogo}}">
+      </div>
+    </div>
+  </div>
+</div>

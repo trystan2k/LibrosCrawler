@@ -1,0 +1,447 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+body {
+  font-family: BasicCommercial, sans-serif;
+  font-size: 13px;
+  line-height: 1.42857;
+  color: #666666;
+  background-color: #f2f2f2;
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+
+.header, .marketing, .footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+/* Custom page header */
+
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+
+
+/* Make the masthead heading the same height as the navigation */
+
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+
+/* Custom page footer */
+
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow>hr {
+  margin: 30px 0;
+}
+
+
+/* Main marketing message and sign up button */
+
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+
+/* Supporting marketing content */
+
+.marketing {
+  margin: 40px 0;
+}
+
+.marketing p+h4 {
+  margin-top: 28px;
+}
+
+
+/* Responsive: Portrait tablets and up */
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1124px;
+  }
+  /* Remove the padding we set earlier */
+  .header, .marketing, .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.mt-xs {
+  margin-top: .5em;
+}
+
+.mt-sm {
+  margin-top: 1em;
+}
+
+.mt-md {
+  margin-top: 1.5em;
+}
+
+.mt-lg {
+  margin-top: 2em;
+}
+
+.mb-xs {
+  margin-bottom: .5em;
+}
+
+.mb-sm {
+  margin-bottom: 1em;
+}
+
+.mb-md {
+  margin-bottom: 1.5em;
+}
+
+.mb-lg {
+  margin-bottom: 2em;
+}
+
+.ml-xs {
+  margin-left: .5em;
+}
+
+.ml-sm {
+  margin-left: 1em;
+}
+
+.ml-md {
+  margin-left: 1.5em;
+}
+
+.ml-lg {
+  margin-left: 2em;
+}
+
+.mr-xs {
+  margin-right: .5em;
+}
+
+.mr-sm {
+  margin-right: 1em;
+}
+
+.mr-md {
+  margin-right: 1.5em;
+}
+
+.mr-lg {
+  margin-right: 2em;
+}
+
+.pt-xs {
+  padding-top: .5em;
+}
+
+.pt-sm {
+  padding-top: 1em;
+}
+
+.pt-md {
+  padding-top: 1.5em;
+}
+
+.pt-lg {
+  padding-top: 2em;
+}
+
+.pb-xs {
+  padding-bottom: .5em;
+}
+
+.pb-sm {
+  padding-bottom: 1em;
+}
+
+.pb-md {
+  padding-bottom: 1.5em;
+}
+
+.pb-lg {
+  padding-bottom: 2em;
+}
+
+.pl-xs {
+  padding-left: .5em;
+}
+
+.pl-sm {
+  padding-left: 1em;
+}
+
+.pl-md {
+  padding-left: 1.5em;
+}
+
+.pl-lg {
+  padding-left: 2em;
+}
+
+.pr-xs {
+  padding-right: .5em;
+}
+
+.pr-sm {
+  padding-right: 1em;
+}
+
+.pr-md {
+  padding-right: 1.5em;
+}
+
+.pr-lg {
+  padding-right: 2em;
+}
+
+.row-separator-border {
+  border-bottom: 1px solid #c9d4d7;
+}
+
+.row-separator-border:last-child {
+  border: 0;
+}
+
+.alert {
+  padding: 10px;
+}
+
+
+/*MATERIAL CHECKBOX*/
+
+.checkbox {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.checkbox label {
+  cursor: pointer;
+  padding-left: 0;
+}
+
+.checkbox label input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  margin: 0;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  left: 0;
+  pointer-events: none;
+}
+
+.checkbox label input[type="checkbox"]:checked+.checkbox-material:before {
+  -webkit-animation: rippleOn 500ms;
+  animation: rippleOn 500ms;
+}
+
+.checkbox label input[type="checkbox"]:checked+.checkbox-material .check {
+  color: #1899cd;
+  border-color: #1899cd;
+}
+
+.checkbox label input[type="checkbox"]:checked+.checkbox-material .check:before {
+  color: #1899cd;
+  box-shadow: 0 0 0 10px, 10px -10px 0 10px, 32px 0 0 20px, 0 32px 0 20px, -5px 5px 0 10px, 20px -12px 0 11px;
+  -webkit-animation: checkbox-on .3s forwards;
+  animation: checkbox-on .3s forwards;
+}
+
+.checkbox label input[type="checkbox"]:checked+.checkbox-material .check:after {
+  background-color: #1899cd;
+  -webkit-animation: rippleOn 500ms forwards;
+  animation: rippleOn 500ms forwards;
+}
+
+.checkbox label .checkbox-material {
+  vertical-align: middle;
+  position: relative;
+  top: 3px;
+}
+
+.checkbox label .checkbox-material .check {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-radius: 2px;
+  overflow: hidden;
+  z-index: 1;
+  border-color: #d6d6d6;
+  color: #1899cd;
+}
+
+.checkbox label .checkbox-material .check:hover {
+  border-color: #999;
+}
+
+.checkbox label .checkbox-material .check:before {
+  position: absolute;
+  content: '';
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: block;
+  margin-top: -4px;
+  margin-left: 6px;
+  width: 0;
+  height: 0;
+  box-shadow: 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0, 0 0 0 0 inset;
+  -webkit-animation: checkbox-off .3s forwards;
+  animation: checkbox-off .3s forwards;
+}
+
+.checkbox label .checkbox-material:before {
+  display: block;
+  position: absolute;
+  left: 0;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.64);
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  z-index: 1;
+  opacity: 0;
+  margin: 0;
+  -webkit-transform: scale3d(2.3, 2.3, 1);
+  transform: scale3d(2.3, 2.3, 1);
+}
+
+.checkbox label.disabled {
+  cursor: not-allowed;
+}
+
+.checkbox input[disabled]+.checkbox-material {
+  cursor: not-allowed;
+}
+
+.checkbox input[disabled]+.checkbox-material .check:hover {
+  border-color: #d6d6d6;
+}
+
+
+/*MATERIAL RADIO BUTTON*/
+
+.radio label {
+  cursor: pointer;
+  padding-left: 30px;
+  line-height: 22px;
+  position: relative;
+}
+
+.radio label input[type="radio"] {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.radio label input[type="radio"]:checked~.circle {
+  border-color: #1899cd;
+}
+
+.radio label input[type="radio"]:checked~.check {
+  background-color: #1899cd;
+  -webkit-transform: scale3d(0.55, 0.55, 1);
+  transform: scale3d(0.55, 0.55, 1);
+}
+
+.radio label input[type="radio"]:checked~.check:after {
+  -webkit-animation: rippleOn 500ms;
+  animation: rippleOn 500ms;
+}
+
+.radio label span {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 2px;
+  transition-duration: .2s;
+}
+
+.radio label span.circle {
+  border: 2px solid #d6d6d6;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+}
+
+.radio label span.circle:hover {
+  border-color: #999;
+}
+
+.radio label span.check {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  background-color: #d6d6d6;
+  -webkit-transform: scale3d(0, 0, 0);
+  transform: scale3d(0, 0, 0);
+}
+
+.radio label span.check:after {
+  display: block;
+  position: absolute;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.64);
+  left: -18px;
+  top: -18px;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  z-index: 1;
+  opacity: 0;
+  margin: 0;
+  -webkit-transform: scale3d(1.5, 1.5, 1);
+  transform: scale3d(1.5, 1.5, 1);
+}
+
+.radio label.disabled {
+  cursor: not-allowed;
+}
+
+.radio input[disabled]+span.circle {
+  cursor: not-allowed;
+}
+
+.radio input[disabled]+span.circle:hover {
+  border-color: #d6d6d6;
+}

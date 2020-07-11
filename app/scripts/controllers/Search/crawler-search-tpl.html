@@ -1,0 +1,64 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Search</div>
+  <div class="panel-body">
+    <form name="crawlerSearchCtrl.search" class="form-horizontal" novalidate>
+      <div class="form-group">
+        <label for="Search_Titulo" class="col-sm-3 control-label"><strong>Titulo</strong></label>
+        <div class="col-sm-8">
+          <input type="text" name="titulo" ng-model="crawlerSearchCtrl.model.search.titulo" class="form-control" id="Search_Titulo">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="Search_Autor" class="col-sm-3 control-label"><strong>Autor</strong></label>
+        <div class="col-sm-8">
+          <input type="text" name="autor" ng-model="crawlerSearchCtrl.model.search.autor" class="form-control" id="Search_Autor">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="Search_ISBN" class="col-sm-3 control-label"><strong>ISBN</strong></label>
+        <div class="col-sm-8">
+          <input type="text" name="isbn" ng-model="crawlerSearchCtrl.model.search.isbn" class="form-control" id="Search_ISBN">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-2 col-sm-offset-4">
+          <div class="checkbox">
+            <label>
+                      <input type="checkbox" name="abebooks" ng-model="crawlerSearchCtrl.model.search.abebooks">
+                      <span class="checkbox-material">
+                          <span class="check"></span>
+                      </span>
+                      <span>Abebooks</span>
+                  </label>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="checkbox">
+            <label>
+                      <input type="checkbox" name="iberlibros" ng-model="crawlerSearchCtrl.model.search.iberlibros">
+                      <span class="checkbox-material">
+                          <span class="check"></span>
+                      </span>
+                      <span>Iberlibros</span>
+                  </label>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="checkbox">
+            <label>
+                      <input type="checkbox" name="uniliber" ng-model="crawlerSearchCtrl.model.search.uniliber">
+                      <span class="checkbox-material">
+                          <span class="check"></span>
+                      </span>
+                      <span>Uniliber</span>
+                  </label>
+          </div>
+        </div>
+      </div>
+      <div class="pull-right btn-row mt-xs mb-lg">
+        <button type="submit" class="btn btn-primary ml-xs mt-sm " ng-click="crawlerSearchCtrl.functions.search()" ng-disabled="!crawlerSearchCtrl.functions.enableSearch">Search</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div ng-include ng-if="crawlerSearchCtrl.model.results" src="'scripts/controllers/Search/crawler-results-tpl.html'"></div>
